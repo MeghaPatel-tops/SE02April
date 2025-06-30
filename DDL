@@ -1,0 +1,32 @@
+Create:
+
+
+1.database
+2.table,view ,procedure
+
+
+//database create
+CREATE DATABASE
+
+
+//table create
+
+for ex:
+student:=>sid int pk,studentName varchar,email varchar
+
+
+CREATE TABLE students(sid int PRIMARY KEY AUTO_INCREMENT, sname varchar(100),email varchar(100),contact varchar(20),address text)
+
+ALTER TABLE students add COLUMN std int;
+
+ALTER TABLE students CHANGE COLUMN std standard int
+
+
+ALTER TABLE students DROP COLUMN standard;
+
+
+CREATE TABLE cources (cid int PRIMARY KEY AUTO_INCREMENT,cname varchar(100),fees float,duration varchar(20))
+
+
+CREATE TABLE student_cource(scid int PRIMARY KEY AUTO_INCREMENT,sid int ,cid int , enroll_date date, FOREIGN KEY(sid) REFERENCES students(sid),FOREIGN KEY(cid) REFERENCES cources(cid))
+
