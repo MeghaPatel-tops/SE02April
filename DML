@@ -1,0 +1,19 @@
+Insert
+INSERT INTO students(sname,email,contact,address)VALUES("Megha","m@gmail.com","9898989898","101 main strret Surat")
+
+
+Update
+update students set sname="malay",email = "malay@gmail.com" where sid=2
+
+
+DELETE
+DELETE FROM students WHERE sid=2
+
+
+
+INSERT INTO cources(cname,fees,duration)VALUES("Python","100000","8 month");
+INSERT INTO cources(cname,fees,duration)VALUES("Java","120000","10 month");
+INSERT INTO cources(cname,fees,duration)VALUES("PHP","10000","3 month");
+INSERT INTO cources(cname,fees,duration)VALUES("Data Science","150000","1.5 year");
+
+
